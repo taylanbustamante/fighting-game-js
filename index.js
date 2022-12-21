@@ -34,41 +34,56 @@ const player = new Fighter({
     }, offset: {
         x: 0, y: 0
     },
-    imageSrc: './img/samuraiMack/Idle.png',
+    //imageSrc: './img/samuraiMack/Idle.png',
+    imageSrc: './img/evilWizard/Idle.png',
     framesMax: 8,
-    scale: 2.5,
+    scale: 2.3,
     offset: {
         x: 215,
-        y: 157
+        y: 230
     },
     sprites: {
         idle: {
-            imageSrc: './img/samuraiMack/Idle.png',
+            //imageSrc: './img/samuraiMack/Idle.png',
+            imageSrc: './img/evilWizard/Idle.png',
+            //framesMax: 8
             framesMax: 8
         },
         run: {
-            imageSrc: './img/samuraiMack/Run.png',
+            //imageSrc: './img/samuraiMack/Run.png',
+            imageSrc: './img/evilWizard/Run.png',
+            //framesMax: 8
             framesMax: 8
         },
         jump: {
-            imageSrc: './img/samuraiMack/Jump.png',
+            //imageSrc: './img/samuraiMack/Jump.png',
+            imageSrc: './img/evilWizard/Jump.png',
+            //framesMax: 2
             framesMax: 2
         },
         fall: {
-            imageSrc: './img/samuraiMack/Fall.png',
+            //imageSrc: './img/samuraiMack/Fall.png',
+            imageSrc: './img/evilWizard/Fall.png',
+            //framesMax: 2
             framesMax: 2
         },
         attack1: {
-            imageSrc: './img/samuraiMack/Attack1.png',
-            framesMax: 6
+            //imageSrc: './img/samuraiMack/Attack1.png',
+            imageSrc: './img/evilWizard/Attack1.png',
+            //framesMax: 6
+            framesMax: 8
         },
         takeHit: {
-            imageSrc: './img/samuraiMack/Take Hit - white silhouette.png',
-            framesMax: 4
+            //imageSrc: './img/samuraiMack/Take Hit - white silhouette.png',d
+            imageSrc: './img/evilWizard/Take hit.png',
+            //framesMax: 4
+            framesMax: 3
         },
         death: {
-            imageSrc: './img/samuraiMack/Death.png',
-            framesMax: 6
+            //imageSrc: './img/samuraiMack/Death.png',
+            imageSrc: './img/evilWizard/Death.png',
+            //framesMax: 6
+            framesMax: 7
         }
     },
     attackBox: {
