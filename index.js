@@ -40,7 +40,7 @@ const player = new Fighter({
     //scale: 2.5,
     scale: 2.3,
     offset: {
-        x: 215,
+        x: 100,
         //y: 157
         y: 230
     },
@@ -107,57 +107,57 @@ const enemy = new Fighter({
        offset: {
         x: -50, y: 0
     },
-    imageSrc: '/img/medivalKnight/Idle.png',
-    //imageSrc: './img/kenji/Idle.png',
-        framesMax: 8,
-        //framesMax: 4,
+    //imageSrc: '/img/medivalKnight/Idle.png',
+    imageSrc: './img/kenji/Idle.png',
+        //framesMax: 8,
+        framesMax: 4,
         scale: 2.5,
         offset: {
-            x: 215,
+            x: -200,
             y: 167
         },
         sprites: {
             idle: {
-                imageSrc: '/img/medivalKnight/Idle.png',
-                //imageSrc: './img/kenji/Idle.png',
-                framesMax: 8
-                //framesMax: 4
+                //imageSrc: '/img/medivalKnight/Idle.png',
+                imageSrc: './img/kenji/Idle.png',
+                //framesMax: 8
+                framesMax: 4
             },
             run: {
-                imageSrc: './img/medivalKnight/Run.png',
-                //imageSrc: './img/kenji/Run.png',
-                framesMax: 8
+                //imageSrc: './img/medivalKnight/Run.png',
+                imageSrc: './img/kenji/Run.png',
                 //framesMax: 8
+                framesMax: 8
             },
             jump: {
-                imageSrc: './img/medivalKnight/Jump.png',
-                //imageSrc: './img/kenji/Jump.png',
-                framesMax: 2
+                //imageSrc: './img/medivalKnight/Jump.png',
+                imageSrc: './img/kenji/Jump.png',
                 //framesMax: 2
+                framesMax: 2
             },
             fall: {
-                imageSrc: './img/medivalKnight/Fall.png',
-                //imageSrc: './img/kenji/Fall.png',
-                framesMax: 2
+                //imageSrc: './img/medivalKnight/Fall.png',
+                imageSrc: './img/kenji/Fall.png',
                 //framesMax: 2
+                framesMax: 2
             },
             attack1: {
-                imageSrc: './img/medivalKnight/Attack1.png',
-                //: './img/kenji/Attack1.png',
-                framesMax: 4
+                //imageSrc: './img/medivalKnight/Attack1.png',
+                imageSrc: './img/kenji/Attack1.png',
                 //framesMax: 4
+                framesMax: 4
             },
             takeHit: {
-                imageSrc: './img/medivalKnight/Take Hit.png',
-                //imageSrc: './img/kenji/Take hit.png',
-                framesMax: 4
-                //framesMax: 3d
+                //imageSrc: './img/medivalKnight/Take Hit.png',
+                imageSrc: './img/kenji/Take hit.png',
+                //framesMax: 4
+                framesMax: 3
             },
             death: {
-                imageSrc: './img/medivalKnight/Death.png',
-                //imageSrc: './img/kenji/Death.png',
-                framesMax: 6
-                //framesMax: 7
+                //imageSrc: './img/medivalKnight/Death.png',
+                imageSrc: './img/kenji/Death.png',
+                //framesMax: 6
+                framesMax: 7
             }
         },
          attackBox: {
