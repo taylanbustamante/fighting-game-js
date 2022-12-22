@@ -36,66 +36,87 @@ const player = new Fighter({
     },
     //imageSrc: './img/samuraiMack/Idle.png',
     imageSrc: './img/evilWizard/Idle.png',
+    //imageSrc: './img/fantasyWarrior/Idle.png',
     framesMax: 8,
-    //scale: 2.5,
-    scale: 2.3,
-    offset: {
-        //x: 215,
-        x: 217,
-        //y: 157
-        y: 230
+    //framesMax: 10, //fantasy
+    //scale: 2.5, //mack
+    scale: 2.3, //evil
+    //scale: 2.8, //fantasy
+    offset: { //posicao personagem
+        //x: 215, //mack
+        x: 217, //evil
+        //x: 110, //fantasy
+        //y: 157 //mack
+        y: 230 //evil
+        //y: 130 //fantasy
     },
     sprites: {
         idle: {
             //imageSrc: './img/samuraiMack/Idle.png',
             imageSrc: './img/evilWizard/Idle.png',
-            //framesMax: 8
-            framesMax: 8
+            //imageSrc: './img/fantasyWarrior/Idle.png',
+            //framesMax: 8 //mack
+            framesMax: 8 //evil
+            //framesMax: 10 //fantasy
         },
         run: {
             //imageSrc: './img/samuraiMack/Run.png',
             imageSrc: './img/evilWizard/Run.png',
-            //framesMax: 8
-            framesMax: 8
+            //imageSrc: './img/fantasyWarrior/Run.png',
+            //framesMax: 8 //mack
+            framesMax: 8 //evil
+            //framesMax: 8 //fantasy
         },
         jump: {
             //imageSrc: './img/samuraiMack/Jump.png',
             imageSrc: './img/evilWizard/Jump.png',
-            //framesMax: 2
-            framesMax: 2
+            //imageSrc: './img/fantasyWarrior/Jump.png',
+            //framesMax: 2 //mack
+            framesMax: 2 //evil
+            //framesMax: 3 //fantasy
         },
         fall: {
             //imageSrc: './img/samuraiMack/Fall.png',
             imageSrc: './img/evilWizard/Fall.png',
-            //framesMax: 2
-            framesMax: 2
+            //imageSrc: './img/fantasyWarrior/Fall.png',
+            //framesMax: 2 //mack
+            framesMax: 2 //evil
+            //framesMax: 3 //fantasy
         },
         attack1: {
             //imageSrc: './img/samuraiMack/Attack1.png',
             imageSrc: './img/evilWizard/Attack1.png',
-            //framesMax: 6
-            framesMax: 8
+            //imageSrc: './img/fantasyWarrior/Attack1.png',
+            //framesMax: 6 //mack
+            framesMax: 8 //evil
+            //framesMax: 7 //fantasy
         },
         attack2: {
             //imageSrc: './img/samuraiMack/Attack2.png',
             imageSrc: './img/evilWizard/Attack2.png',
-            //framesMax: 6
-            framesMax: 8
+            //imageSrc: './img/fantasyWarrior/Attack2.png',
+            //framesMax: 6 //mack
+            framesMax: 8 //evil
+            //framesMax: 7 //fantasy
         },
         takeHit: {
             //imageSrc: './img/samuraiMack/Take Hit - white silhouette.png',
             imageSrc: './img/evilWizard/Take hit.png',
-            //framesMax: 4
-            framesMax: 3
+            //imageSrc: './img/fantasyWarrior/Take hit.png',
+            //framesMax: 4 //mack
+            framesMax: 3 //evil
+            //framesMax: 3 //fantasy
         },
         death: {
             //imageSrc: './img/samuraiMack/Death.png',
             imageSrc: './img/evilWizard/Death.png',
-            //framesMax: 6
-            framesMax: 7
+            //imageSrc: './img/fantasyWarrior/Death.png',
+            //framesMax: 6 //mack
+            framesMax: 7 //evil
+            //framesMax: 7 //fantasy
         }
     },
-    attackBox: {
+    attackBox: { //tamanho e posicao hitbox
         offset: {
             x: 100,
             y: 50
@@ -207,6 +228,8 @@ function animate() {
     c.fillRect(0, 0, canvas.width, canvas.height)
     player.update()
     enemy.update()
+
+
 
     player.velocity.x = 0
     enemy.velocity.x = 0
