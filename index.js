@@ -76,6 +76,12 @@ const player = new Fighter({
             //framesMax: 6
             framesMax: 8
         },
+        attack2: {
+            //imageSrc: './img/samuraiMack/Attack2.png',
+            imageSrc: './img/evilWizard/Attack2.png',
+            //framesMax: 6
+            framesMax: 8
+        },
         takeHit: {
             //imageSrc: './img/samuraiMack/Take Hit - white silhouette.png',
             imageSrc: './img/evilWizard/Take hit.png',
@@ -145,6 +151,12 @@ const enemy = new Fighter({
             attack1: {
                 //imageSrc: './img/medivalKnight/Attack1.png',
                 imageSrc: './img/kenji/Attack1.png',
+                //framesMax: 4
+                framesMax: 4
+            },
+            attack2: {
+                //imageSrc: './img/medivalKnight/Attack2.png',
+                imageSrc: './img/kenji/Attack2.png',
                 //framesMax: 4
                 framesMax: 4
             },
@@ -240,7 +252,7 @@ function animate() {
         rectangle1: player,
         rectangle2: enemy
     }) &&
-        player.isAttacking && player.framesCurrent === 4) {
+        player.isAttacking && player.framesCurrent === 5) { //4 samuraiMack
         enemy.takeHit()
         player.isAttacking = false
         gsap.to('#enemyHealth', {
@@ -249,7 +261,7 @@ function animate() {
     }
 
     //if player misses
-    if (player.isAttacking && player.framesCurrent === 4) {
+    if (player.isAttacking && player.framesCurrent === 5) {
         player.isAttacking = false
     }
 
@@ -295,8 +307,11 @@ window.addEventListener('keydown', (event) => {
             case 'w':
                 player.velocity.y = -20
                 break
-            case 's':
-                player.attack()
+            case 'g':
+                player.attack(1)
+                break
+            case 'h':
+                player.attack(2)
                 break
         }
     }
@@ -313,8 +328,11 @@ window.addEventListener('keydown', (event) => {
             case 'ArrowUp':
                 enemy.velocity.y = -20
                 break
-            case 'ArrowDown':
-                enemy.attack()
+            case '1':
+                enemy.attack(1)
+                break
+            case '2':
+                enemy.attack(2)
                 break
         }
     }
